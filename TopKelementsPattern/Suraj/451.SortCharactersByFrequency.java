@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 class Solution {
     public String frequencySort(String s) {
         StringBuilder stb=new StringBuilder();
@@ -16,6 +19,8 @@ class Solution {
                 stb.append(c);
             }
         }
+        List<Integer> dd=new ArrayList<>();
+        Collections.shuffle();
         return stb.toString();
     }
 }
